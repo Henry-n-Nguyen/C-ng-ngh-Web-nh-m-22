@@ -45,7 +45,7 @@
 
 _note_ Go to step 1 and create new branch
 
-**Note : You mustn't touch master branch**
+**Note : You mustn't touch the "main" branch**
 **NOTE : You must resolve conflict of your pull request**
 
 **Note** : You may change models for experiment purposes. **_BUT_** if you want to add feature, ask the owner.
