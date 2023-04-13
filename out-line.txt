@@ -1,1 +1,12 @@
-
+1. giao diện log in, register
+  - Người làm : 
+  - Tiến độ :
+2. giao diện chính khi log in vào
+  - Người làm : 
+  - Tiến độ :
+3. giao diện chat cơ bản để có tái sử dụng ở nhiều chat box
+  - Người làm : 
+  - Tiến độ :
+4. giao diện cài đặt và profile cá nhân nói chung nhé
+  - Người làm : 
+  - Tiến độ :
