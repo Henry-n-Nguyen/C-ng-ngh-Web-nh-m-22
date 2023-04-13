@@ -1,6 +1,6 @@
 1. giao diện log in, register
-  - Người làm : 
-  - Tiến độ :
+  - Người làm : Huyền Trần <13/4>
+  - Tiến độ : Đang làm <13/4>
 2. giao diện chính khi log in vào
   - Người làm : 
   - Tiến độ :
