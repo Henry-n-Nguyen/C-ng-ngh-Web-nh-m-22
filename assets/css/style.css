@@ -1,1 +1,928 @@
+:root {
+    --N10: #f9fafb;
+    --N15: #f3f5f6;
+    --N20: #eaedf0;
+    --N25: #dfe2e7;
+    --N30: #d6dbe1;
+    --N40: #cad0d8;
+    --N50: #bec6cf;
+    --N60: #b6bec9;
+    --N70: #97a4b5;
+    --N80: #7589a3;
+    --N90: #476285;
+    --N100: #2e486b;
+    --N200: #172f4f;
+    --N300: #081c36;
+    --N350: #051224;
+    --NG10: #f7f7f8;
+    --NG15: #eef0f1;
+    --NG20: #e6e8ea;
+    --NG25: #d8dbdf;
+    --NG30: #c5c9ce;
+    --NG40: #b1b5b9;
+    --NG50: #9a9ea2;
+    --NG55: #85878a;
+    --NG60: #6f7071;
+    --NG70: #575757;
+    --NG80: #3d3d3d;
+    --NG85: #2e2e2e;
+    --NG90: #1f1f1f;
+    --NG95: #141414;
+    --NG100: #0d0d0d;
+    --B10: #f0f7ff;
+    --B15: #e5efff;
+    --B20: #c7e0ff;
+    --B25: #abcdff;
+    --B30: #8fbfff;
+    --B40: #72abff;
+    --B50: #3989ff;
+    --B55: #0068ff;
+    --B60: #005ae0;
+    --B70: #004bb9;
+    --B80: #00378a;
+    --B85: #002b6b;
+    --B90: #002152;
+    --B95: #001a33;
+    --B100: #081020;
+    --STB10: #f1f4f8;
+    --STB15: #e2e9f1;
+    --STB20: #d9e2ed;
+    --STB25: #c7d5e5;
+    --STB30: #b2c5dc;
+    --STB40: #8eabcd;
+    --STB50: #6991bf;
+    --STB55: #507fb4;
+    --STB60: #426d9e;
+    --STB70: #32547b;
+    --STB80: #274362;
+    --STB85: #1f344d;
+    --STB90: #17283b;
+    --STB95: #111e2c;
+    --STB100: #0d1621;
+    --SKB10: #f0fbff;
+    --SKB15: #e0f7ff;
+    --SKB20: #c7f1ff;
+    --SKB25: #a8e9ff;
+    --SKB30: #8ae2ff;
+    --SKB40: #66d9ff;
+    --SKB50: #3dcfff;
+    --SKB55: #0fc3ff;
+    --SKB60: #00a8e0;
+    --SKB70: #0086b3;
+    --SKB80: #00678a;
+    --SKB85: #00506b;
+    --SKB90: #003d52;
+    --SKB95: #002e3d;
+    --SKB100: #00222e;
+    --R10: #fdf1f1;
+    --R15: #fbdfdf;
+    --R20: #f9cdcd;
+    --R25: #f6b6b6;
+    --R30: #f39b9b;
+    --R40: #ed6e6e;
+    --R50: #e94949;
+    --R55: #d91b1b;
+    --R60: #c31818;
+    --R70: #9a1313;
+    --R80: #7b0f0f;
+    --R85: #5f0c0c;
+    --R90: #490909;
+    --R95: #360707;
+    --R100: #240505;
+    --OR10: #fff6f0;
+    --OR15: #ffeadb;
+    --OR20: #ffddc7;
+    --OR25: #ffcead;
+    --OR30: #ffbc8f;
+    --OR40: #ff9d5c;
+    --OR50: #ff7e29;
+    --OR55: #ff6905;
+    --OR60: #e05a00;
+    --OR70: #ad4500;
+    --OR80: #8a3700;
+    --OR85: #6b2b00;
+    --OR90: #522100;
+    --OR95: #3d1800;
+    --OR100: #291000;
+    --Y10: #fffbf0;
+    --Y15: #fff7db;
+    --Y20: #fff2c7;
+    --Y25: #ffecad;
+    --Y30: #ffe58f;
+    --Y40: #ffd95c;
+    --Y50: #ffcd29;
+    --Y55: #fac000;
+    --Y60: #e0ac00;
+    --Y70: #ad8500;
+    --Y80: #8a6a00;
+    --Y85: #6b5200;
+    --Y90: #523f00;
+    --Y95: #3d2f00;
+    --Y100: #291f00;
+    --G10: #f4fbf6;
+    --G15: #e8f7ed;
+    --G20: #d5f1de;
+    --G25: #bee9cc;
+    --G30: #a7e2bb;
+    --G40: #88d7a3;
+    --G50: #6acd8b;
+    --G55: #4bc377;
+    --G60: #37b361;
+    --G70: #2b974f;
+    --G80: #1f7a3d;
+    --G85: #176331;
+    --G90: #104c24;
+    --G95: #0b381a;
+    --G100: #072712;
+    --TL10: #f2fcfc;
+    --TL15: #e1f9f7;
+    --TL20: #d1f5f3;
+    --TL25: #b3efeb;
+    --TL30: #9aeae4;
+    --TL40: #78e2db;
+    --TL50: #52dad1;
+    --TL55: #2ac5bb;
+    --TL60: #24a89f;
+    --TL70: #1e9088;
+    --TL80: #197670;
+    --TL85: #135854;
+    --TL90: #0e4440;
+    --TL95: #0b3230;
+    --TL100: #072220;
+    --P10: #f6f3fc;
+    --P15: #ede7f9;
+    --P20: #ddd2f4;
+    --P25: #cbbaee;
+    --P30: #b9a1e8;
+    --P40: #a385e0;
+    --P50: #8b64d8;
+    --P55: #6f3fcf;
+    --P60: #5a2db4;
+    --P70: #47248f;
+    --P80: #371c6e;
+    --P85: #2b1556;
+    --P90: #211041;
+    --P95: #180c31;
+    --P100: #120925;
+    --PK10: #fef0fb;
+    --PK15: #fde2f8;
+    --PK20: #fccaf2;
+    --PK25: #fbadeb;
+    --PK30: #f990e4;
+    --PK40: #f76edc;
+    --PK50: #f547d2;
+    --PK55: #f31bc8;
+    --PK60: #d50bad;
+    --PK70: #aa0989;
+    --PK80: #83076a;
+    --PK85: #660552;
+    --PK90: #4e043f;
+    --PK95: #3a032f;
+    --PK100: #2c0223;
+    --WA0: hsla(0,0%,100%,0);
+    --WA5: hsla(0,0%,100%,0.05);
+    --WA10: hsla(0,0%,100%,0.1);
+    --WA15: hsla(0,0%,100%,0.15);
+    --WA20: hsla(0,0%,100%,0.2);
+    --WA25: hsla(0,0%,100%,0.25);
+    --WA30: hsla(0,0%,100%,0.3);
+    --WA35: hsla(0,0%,100%,0.35);
+    --WA40: hsla(0,0%,100%,0.4);
+    --WA45: hsla(0,0%,100%,0.45);
+    --WA50: hsla(0,0%,100%,0.5);
+    --WA55: hsla(0,0%,100%,0.55);
+    --WA60: hsla(0,0%,100%,0.6);
+    --WA65: hsla(0,0%,100%,0.65);
+    --WA70: hsla(0,0%,100%,0.7);
+    --WA75: hsla(0,0%,100%,0.75);
+    --WA80: hsla(0,0%,100%,0.8);
+    --WA85: hsla(0,0%,100%,0.85);
+    --WA90: hsla(0,0%,100%,0.9);
+    --WA95: hsla(0,0%,100%,0.95);
+    --WA100: #fff;
+    --BA0: transparent;
+    --BA5: rgba(0,0,0,0.05);
+    --BA10: rgba(0,0,0,0.1);
+    --BA15: rgba(0,0,0,0.15);
+    --BA20: rgba(0,0,0,0.2);
+    --BA25: rgba(0,0,0,0.25);
+    --BA30: rgba(0,0,0,0.3);
+    --BA35: rgba(0,0,0,0.35);
+    --BA40: rgba(0,0,0,0.4);
+    --BA45: rgba(0,0,0,0.45);
+    --BA50: rgba(0,0,0,0.5);
+    --BA55: rgba(0,0,0,0.55);
+    --BA60: rgba(0,0,0,0.6);
+    --BA65: rgba(0,0,0,0.65);
+    --BA70: rgba(0,0,0,0.7);
+    --BA75: rgba(0,0,0,0.75);
+    --BA80: rgba(0,0,0,0.8);
+    --BA85: rgba(0,0,0,0.85);
+    --BA90: rgba(0,0,0,0.9);
+    --BA95: rgba(0,0,0,0.95);
+    --BA100: #000;
+    --V_Gradient_B60B40: linear-gradient(0deg,#005ae0,#529aff);
+    --V_Gradient_B55B30: linear-gradient(0deg,#06f,#529aff);
+    --V_Gradient_B50SKB55: linear-gradient(45deg,#1f78ff 14.64%,#0fc3ff 85.36%);
+    --V_Gradient_SKB55GR55: linear-gradient(0deg,#0fc3ff,#4bc377);
+    --V_Gradient_GR60GR40: linear-gradient(0deg,#37b361,#88d7a3);
+    --V_Gradient_GR60Y50: linear-gradient(0deg,#37b361,#ffd138);
+    --V_Gradient_OR60Y55: linear-gradient(0deg,#eb5e00,#ffc70f);
+    --V_Gradient_R55OR50: linear-gradient(0deg,#ff0f0f,#ff8838);
+    --V_Gradient_PU55B50: linear-gradient(0deg,#6f3fcf,#1f78ff);
+    --V_Gradient_PU60B40: linear-gradient(0deg,#5a2db4,#a385e0);
+    --V_Gradient_PU55PK25: linear-gradient(0deg,#6f3fcf,#fbadeb);
+    --V_Gradient_PK55PK25: linear-gradient(0deg,#f31bc8,#fbadeb);
+    --V_Gradient_R50PK25: linear-gradient(0deg,#ff3838,#fbadeb);
+    --H_Gradient_B60B40: linear-gradient(90deg,#005ae0,#529aff);
+    --H_Gradient_B55B30: linear-gradient(90deg,#06f,#529aff);
+    --H_Gradient_B50SKB55: linear-gradient(45deg,#1f78ff 14.64%,#0fc3ff 85.36%);
+    --H_Gradient_SKB55GR55: linear-gradient(90deg,#0fc3ff,#4bc377);
+    --H_Gradient_GR60GR40: linear-gradient(90deg,#37b361,#88d7a3);
+    --H_Gradient_GR60Y50: linear-gradient(90deg,#37b361,#ffd138);
+    --H_Gradient_OR60Y55: linear-gradient(90deg,#eb5e00,#ffc70f);
+    --H_Gradient_R55OR50: linear-gradient(90deg,#ff0f0f,#ff8838);
+    --H_Gradient_PU55B50: linear-gradient(90deg,#6f3fcf,#1f78ff);
+    --H_Gradient_PU60B40: linear-gradient(90deg,#5a2db4,#a385e0);
+    --H_Gradient_PU55PK25: linear-gradient(90deg,#6f3fcf,#fbadeb);
+    --H_Gradient_PK55PK25: linear-gradient(90deg,#f31bc8,#fbadeb);
+    --H_Gradient_R50PK25: linear-gradient(90deg,#ff3838,#fbadeb);
+    --D_Gradient_B60B40: linear-gradient(45deg,#005ae0 14.64%,#529aff 85.36%);
+    --D_Gradient_B55B30: linear-gradient(45deg,#06f 14.64%,#529aff 85.36%);
+    --D_Gradient_B50SKB55: linear-gradient(45deg,#1f78ff 14.64%,#0fc3ff 85.36%);
+    --D_Gradient_SKB55GR55: linear-gradient(45deg,#0fc3ff 14.64%,#4bc377 85.36%);
+    --D_Gradient_GR60GR40: linear-gradient(45deg,#37b361 14.64%,#88d7a3 85.36%);
+    --D_Gradient_GR60Y50: linear-gradient(45deg,#37b361 14.64%,#ffd138 85.36%);
+    --D_Gradient_OR60Y55: linear-gradient(45deg,#eb5e00 14.64%,#ffc70f 85.36%);
+    --D_Gradient_R55OR50: linear-gradient(45deg,#ff0f0f 14.64%,#ff8838 85.36%);
+    --D_Gradient_PU55B50: linear-gradient(45deg,#6f3fcf 14.64%,#1f78ff 85.36%);
+    --D_Gradient_PU60B40: linear-gradient(45deg,#5a2db4 14.64%,#a385e0 85.36%);
+    --D_Gradient_PU55PK25: linear-gradient(45deg,#6f3fcf 14.64%,#fbadeb 85.36%);
+    --D_Gradient_PK55PK25: linear-gradient(45deg,#f31bc8 14.64%,#fbadeb 85.36%);
+    --D_Gradient_R50PK25: linear-gradient(45deg,#ff3838 14.64%,#fbadeb 85.36%);
+    --HL_photo-bg: #545454;
+    --HL_input: rgba(0,133,255,0.25);
+    --link: #0068ff;
+    --success: #37b361;
+    --icon-hover-bg: #eaedf0;
+    --input-white: #fff;
+    --input-placeholder-wh: #7589a3;
+    --input-icon-wh: #2e486b;
+    --input-grey: #eaedf0;
+    --input-placeholder-gr: #2e486b;
+    --input-icon-gr: #2e486b;
+    --self-bubble-chat-shadow: rgba(0,0,0,0.2);
+    --text-quote: #476285;
+    --bg-divide-bb-blue: #b6bec9;
+    --grey-dot: #b6bec9;
+    --red-dot: #c31818;
+    --item-wa-hover: #eaedf0;
+    --item-wa-select: #f0f7ff;
+    --bg-default: #fff;
+    --title-bar: #eaedf0;
+    --tab-txt: #7589a3;
+    --tip-bg: #00378a;
+    --surface-background: #e6e8ea;
+    --surface-background-subtle: #eef0f1;
+    --surface-alt: #fff;
+    --layer-background: #fff;
+    --layer-background-subtle: #f9fafb;
+    --layer-background-hover: #f3f5f6;
+    --layer-background-disabled: #d8dbdf;
+    --layer-background-selected: #e5efff;
+    --layer-background-inverse: #051224;
+    --layer-background-inverse-subtle: #081c36;
+    --layer-background-leftmenu: #0091ff;
+    --layer-background-leftmenu-hover: rgba(0,0,0,0.1);
+    --layer-background-leftmenu-selected: #006edc;
+    --layer-alert-background: #c31818;
+    --layer-error-background: #fdf1f1;
+    --layer-success-background: #f4fbf6;
+    --layer-warning-background: #fffbf0;
+    --layer-information-background: #f0f7ff;
+    --text-primary: #081c36;
+    --text-secondary: #7589a3;
+    --text-placeholder: #7589a3;
+    --text-disabled: #b6bec9;
+    --text-on-disabled-color: #97a4b5;
+    --text-on-color: #fff;
+    --text-errors: #d91b1b;
+    --text-success: #37b361;
+    --text-warning: #e0ac00;
+    --text-information: #005ae0;
+    --icon-primary: #081c36;
+    --icon-secondary: #7589a3;
+    --icon-disabled: #b6bec9;
+    --icon-on-disabled-color: #97a4b5;
+    --icon-on-color: #fff;
+    --icon-errors: #d91b1b;
+    --icon-success: #37b361;
+    --icon-warning: #e0ac00;
+    --icon-information: #005ae0;
+    --icon-count-noti-enable-bg: #c31818;
+    --icon-count-noti-disable-bg: #b6bec9;
+    --border: #d6dbe1;
+    --border-subtle: #d8dbdf;
+    --border-bold: #d8dbdf;
+    --border-disabled: #c5c9ce;
+    --border-focused: #0068ff;
+    --border-selected: #72abff;
+    --border-inverse: #fff;
+    --border-errors: #c31818;
+    --border-success: #37b361;
+    --border-warning: #e0ac00;
+    --border-information: #0068ff;
+    --divider: #c5c9ce;
+    --divider-subtle: #d8dbdf;
+    --divider-bold: #b1b5b9;
+    --curtain: #c5c9ce;
+    --curtain-subtle: rgba(0,0,0,0.3);
+    --curtain-bold: rgba(0,0,0,0.7);
+    --skeleton: #e6e8ea;
+    --skeleton-subtle: #eef0f1;
+    --background-inactiveness: #fff;
+    --background-inactiveness-subtle: #b1b5b9;
+    --background-inactiveness-disabled: #d8dbdf;
+    --background-activeness: #0068ff;
+    --background-activeness-disabled: #abcdff;
+    --background-focus-ui: #fff;
+    --cta-link: #0068ff;
+    --cta-link-pressed: #004bb9;
+    --cta-destruction: #c31818;
+    --cta-destruction-pressed: #7b0f0f;
+    --field-bg-filled: #eaedf0;
+    --field-bg-filled-hover: #d6dbe1;
+    --field-bg-outline: #fff;
+    --field-bg-outline-hover: #f9fafb;
+    --blue-message: #e5efff;
+    --blue-message-selected: #c7e0ff;
+    --blue-quote: #c7e0ff;
+    --blue-quote-selected: #abcdff;
+    --white-message: #fff;
+    --white-message-selected: #c7e0ff;
+    --white-quote: #eaedf0;
+    --white-quote-selected: #abcdff;
+    --button-primary-normal: #0068ff;
+    --button-primary-hover: #004bb9;
+    --button-primary-pressed: #00378a;
+    --button-primary-disabled: #abcdff;
+    --button-primary-text: #fff;
+    --button-primary-text-disabled: #e5efff;
+    --button-primary-focus-bg: #00378a;
+    --button-primary-focus-text: #fff;
+    --button-secondary-normal: #e5efff;
+    --button-secondary-hover: #c7e0ff;
+    --button-secondary-pressed: #abcdff;
+    --button-secondary-disabled: #e5efff;
+    --button-secondary-text: #005ae0;
+    --button-secondary-text-disabled: #abcdff;
+    --button-secondary-focus-bg: #abcdff;
+    --button-secondary-focus-text: #005ae0;
+    --button-danger-normal: #c31818;
+    --button-danger-hover: #9a1313;
+    --button-danger-pressed: #7b0f0f;
+    --button-danger-disabled: #f6b6b6;
+    --button-danger-text: #fff;
+    --button-danger-text-disabled: #fbdfdf;
+    --button-danger-focus-bg: #7b0f0f;
+    --button-danger-focus-text: #fff;
+    --button-secondary-danger-normal: #fbdfdf;
+    --button-secondary-danger-hover: #f9cdcd;
+    --button-secondary-danger-pressed: #f6b6b6;
+    --button-secondary-danger-disabled: #fbdfdf;
+    --button-secondary-danger-text: #d91b1b;
+    --button-secondary-danger-text-disabled: #f6b6b6;
+    --button-secondary-danger-focus-bg: #f6b6b6;
+    --button-secondary-danger-focus-text: #c31818;
+    --button-neutral-normal: #eaedf0;
+    --button-neutral-hover: #dfe2e7;
+    --button-neutral-pressed: #d6dbe1;
+    --button-neutral-disabled: #eaedf0;
+    --button-neutral-text: #081c36;
+    --button-neutral-text-disabled: #b6bec9;
+    --button-neutral-focus-bg: #e5efff;
+    --button-neutral-focus-text: #005ae0;
+    --button-tertiary-primary-normal: transparent;
+    --button-tertiary-primary-hover: #e5efff;
+    --button-tertiary-primary-pressed: #c7e0ff;
+    --button-tertiary-primary-disabled: transparent;
+    --button-tertiary-primary-text: #0068ff;
+    --button-tertiary-primary-text-disabled: #abcdff;
+    --button-tertiary-primary-focus-bg: #c7e0ff;
+    --button-tertiary-primary-focus-text: #005ae0;
+    --button-tertiary-danger-normal: transparent;
+    --button-tertiary-danger-hover: #fbdfdf;
+    --button-tertiary-danger-pressed: #f9cdcd;
+    --button-tertiary-danger-disabled: transparent;
+    --button-tertiary-danger-text: #d91b1b;
+    --button-tertiary-danger-text-disabled: #f6b6b6;
+    --button-tertiary-danger-focus-bg: #f9cdcd;
+    --button-tertiary-danger-focus-text: #c31818;
+    --button-tertiary-neutral-normal: transparent;
+    --button-tertiary-neutral-hover: #dfe2e7;
+    --button-tertiary-neutral-pressed: #d6dbe1;
+    --button-tertiary-neutral-disabled: transparent;
+    --button-tertiary-neutral-text: #081c36;
+    --button-tertiary-neutral-text-disabled: #b6bec9;
+    --button-tertiary-neutral-focus-bg: #e5efff;
+    --button-tertiary-neutral-focus-text: #005ae0;
+    --accent-blue-bg-subtle: #e5efff;
+    --accent-blue-bg: #0068ff;
+    --accent-blue-bg-bold: #00378a;
+    --accent-blue-border-subtle: #c7e0ff;
+    --accent-blue-border: #0068ff;
+    --accent-blue-border-bold: #00378a;
+    --accent-blue-text-subtle: #f0f7ff;
+    --accent-blue-text: #0068ff;
+    --accent-blue-text-bold: #002b6b;
+    --accent-blue-icon-subtle: #f0f7ff;
+    --accent-blue-icon: #0068ff;
+    --accent-blue-icon-bold: #002b6b;
+    --accent-red-bg-subtle: #fbdfdf;
+    --accent-red-bg: #d91b1b;
+    --accent-red-bg-bold: #7b0f0f;
+    --accent-red-border-subtle: #f9cdcd;
+    --accent-red-border: #d91b1b;
+    --accent-red-border-bold: #7b0f0f;
+    --accent-red-text-subtle: #fdf1f1;
+    --accent-red-text: #9a1313;
+    --accent-red-text-bold: #5f0c0c;
+    --accent-red-icon-subtle: #fdf1f1;
+    --accent-red-icon: #9a1313;
+    --accent-red-icon-bold: #5f0c0c;
+    --accent-orange-bg-subtle: #ffeadb;
+    --accent-orange-bg: #ff6905;
+    --accent-orange-bg-bold: #8a3700;
+    --accent-orange-border-subtle: #ffddc7;
+    --accent-orange-border: #ff6905;
+    --accent-orange-border-bold: #8a3700;
+    --accent-orange-text-subtle: #fff6f0;
+    --accent-orange-text: #ad4500;
+    --accent-orange-text-bold: #6b2b00;
+    --accent-orange-icon-subtle: #fff6f0;
+    --accent-orange-icon: #ad4500;
+    --accent-orange-icon-bold: #6b2b00;
+    --accent-green-bg-subtle: #e8f7ed;
+    --accent-green-bg: #4bc377;
+    --accent-green-bg-bold: #1f7a3d;
+    --accent-green-border-subtle: #d5f1de;
+    --accent-green-border: #4bc377;
+    --accent-green-border-bold: #1f7a3d;
+    --accent-green-text-subtle: #f4fbf6;
+    --accent-green-text: #2b974f;
+    --accent-green-text-bold: #176331;
+    --accent-green-icon-subtle: #f4fbf6;
+    --accent-green-icon: #2b974f;
+    --accent-green-icon-bold: #176331;
+    --accent-steal-bg-subtle: #e1f9f7;
+    --accent-steal-bg: #2ac5bb;
+    --accent-steal-bg-bold: #197670;
+    --accent-steal-border-subtle: #d1f5f3;
+    --accent-steal-border: #2ac5bb;
+    --accent-steal-border-bold: #197670;
+    --accent-steal-text-subtle: #f2fcfc;
+    --accent-steal-text: #1e9088;
+    --accent-steal-text-bold: #135854;
+    --accent-steal-icon-subtle: #f2fcfc;
+    --accent-steal-icon: #1e9088;
+    --accent-steal-icon-bold: #135854;
+    --accent-skyblue-bg-subtle: #e0f7ff;
+    --accent-skyblue-bg: #0fc3ff;
+    --accent-skyblue-bg-bold: #00678a;
+    --accent-skyblue-border-subtle: #c7f1ff;
+    --accent-skyblue-border: #0fc3ff;
+    --accent-skyblue-border-bold: #00678a;
+    --accent-skyblue-text-subtle: #f0fbff;
+    --accent-skyblue-text: #0086b3;
+    --accent-skyblue-text-bold: #00506b;
+    --accent-skyblue-icon-subtle: #f0fbff;
+    --accent-skyblue-icon: #0086b3;
+    --accent-skyblue-icon-bold: #00506b;
+    --accent-pink-bg-subtle: #fde2f8;
+    --accent-pink-bg: #f31bc8;
+    --accent-pink-bg-bold: #83076a;
+    --accent-pink-border-subtle: #fccaf2;
+    --accent-pink-border: #f31bc8;
+    --accent-pink-border-bold: #83076a;
+    --accent-pink-text-subtle: #fef0fb;
+    --accent-pink-text: #aa0989;
+    --accent-pink-text-bold: #660552;
+    --accent-pink-icon-subtle: #fef0fb;
+    --accent-pink-icon: #aa0989;
+    --accent-pink-icon-bold: #660552;
+    --accent-purple-bg-subtle: #ede7f9;
+    --accent-purple-bg: #6f3fcf;
+    --accent-purple-bg-bold: #371c6e;
+    --accent-purple-border-subtle: #ddd2f4;
+    --accent-purple-border: #6f3fcf;
+    --accent-purple-border-bold: #371c6e;
+    --accent-purple-text-subtle: #f6f3fc;
+    --accent-purple-text: #47248f;
+    --accent-purple-text-bold: #2b1556;
+    --accent-purple-icon-subtle: #f6f3fc;
+    --accent-purple-icon: #47248f;
+    --accent-purple-icon-bold: #2b1556;
+    --accent-stealblue-bg-subtle: #e2e9f1;
+    --accent-stealblue-bg: #507fb4;
+    --accent-stealblue-bg-bold: #274362;
+    --accent-stealblue-border-subtle: #d9e2ed;
+    --accent-stealblue-border: #507fb4;
+    --accent-stealblue-border-bold: #274362;
+    --accent-stealblue-text-subtle: #f1f4f8;
+    --accent-stealblue-text: #32547b;
+    --accent-stealblue-text-bold: #1f344d;
+    --accent-stealblue-icon-subtle: #f1f4f8;
+    --accent-stealblue-icon: #32547b;
+    --accent-stealblue-icon-bold: #1f344d;
+    --accent-yellow-bg-subtle: #fff7db;
+    --accent-yellow-bg: #fac000;
+    --accent-yellow-bg-bold: #8a6a00;
+    --accent-yellow-border-subtle: #fff2c7;
+    --accent-yellow-border: #fac000;
+    --accent-yellow-border-bold: #8a6a00;
+    --accent-yellow-text-subtle: #fffbf0;
+    --accent-yellow-text: #ad8500;
+    --accent-yellow-text-bold: #6b5200;
+    --accent-yellow-icon-subtle: #fffbf0;
+    --accent-yellow-icon: #ad8500;
+    --accent-yellow-icon-bold: #6b5200;
+}
+
+#group-creator .create-group__item__name, .cb-info-file-item__error-msg, .cb-info-file-item__file-size, .cb-info-file-item__send-date, .cb-info-file-item__suggest-preview-file, .cb-info-file-item__suggest-preview-folder, .chat-box-member__info__name, .chat-info-link__subtitle, .chat-info-link__title, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label>.description, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.name, .conv-item-title__name, .conv-message, .conv-title-name, .file-banner-content__full-name, .file-banner-content__sender-name, .file-message__content-error, .file-message__content-title, .file-progress-row__end-text, .file-progress-row__start-text, .file-star-msg-content__size, .file-star-msg-content__title, .file-suggest-item__conversation, .file-suggest-item__name, .file-suggest-item__size, .filter-preview-v2>div, .fmsg-send-time__error-msg, .item-message, .item-title-name, .mn-noti-undo-del>.mn-noti-undo-del__counting>.mn-noti-undo-del__mess>span, .mn-noti-undo-del>.mn-noti-undo-del__failed>.mn-noti-undo-del__mess>span, .mn-noti-undo-del>.mn-noti-undo-del__success>.mn-noti-undo-del__mess>span, .quote-file__name, .quote-file__text, .search-result-file__file-name, .search-result-file__file-name-seg, .search-result-file__file-size, .search-result-file__send-date, .search-result-file__suggest-preview-file, .search-result-file__suggest-preview-folder, .star-msgs__group__item__title>.text-name.user-name, .text-simple-dropdown>div, .truncate, .user-single-filter-preview>div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+#addConversationLabel .autosuggest-item, #calendar-v3>.cal-content .cal-item, #calendar-v3>.cal-title .main-title .ena-clickable, #filter-tags-sb .filter-tag-item>.edit-button, #group-creator .create-group__avatar, #group-creator .create-group__nav, #group-creator .create-group__phone-info>.cgp-list>.cgp-item, #group-creator .create-group__phone-info>.cgp-tabs>.cgp-tab, #rtfTool .chat-input__tools__btn, .cal-date-time .cal-nav, .chat-message__actions__btn, .chat-resend, .chips, .clickable, .conv-action, .conv-item-padding, .dd-options, .filter-color-item, .filter-preview-v2, .group-board-shortcut, .group-profile-section .group-profile-edit-name-ico, .group-profile-section .group-profile-item, .group-profile-section .group-profile-item .group-profile-link, .item-setting-action, .lbl-conv-item, .link-preview-v2 .preview-close, .list-item, .meeting-item, .message-view__banner__close, .more-path-icon, .msg-filters-bar.ver3 .conv-tab, .noti-item-padding, .photo-sticker__command-container, .preview-contact-wrapper .preview-contact>.close__preview, .seasonal__template__icon, .selected-avt, .semi-compact-back-btn, .slideshow__bottom__dot, .sticker-selector__menu__item, .tabs-container .tabs-main .tab-container, .td-checklist .td-icons, .tdp-item, .text-color-menu-container .text-color-menu, .text-simple-dropdown, .titlebar-menu-btn-header, .tt-expand, .txt-clickable, .user-single-filter-preview, .user-status-footer, .z-checkbox, .z-dropdown-preview, .z-radio, .z-toggle, .zdd-select-all-section, .zl-collapse__panel, .zl-modal__dialog__close, .zl-slider__zoom-btn {
+    cursor: pointer;
+}
+
+#calendar-v3 .cal-weekday-v3, #filter-tags-sb .filter-tag-item>.edit-button, #group-creator .create-group__counter, #group-creator .create-group__item__link-icon, #group-creator .create-group__nav, #group-creator .create-group__selected-title, #groupNameInput--change, #searchResultList .global-search-no-result__sub-text-wrapper, #ztoolbar.chat-input-v2, #ztoolbar.chat-input-v2 .drop-ico, .app-info__desc__line, .assignee-preview-item__remain, .block-icon, .bubble-contact-card-container>.bubble-contact-card>.content, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code>.qr__photo.qr--invalid, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper.off--qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper>.user-info.off--qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper>.user-info>.user-name-wrapper, .bubble-contact-card-container>.bubble-contact-card>.footer, .bubble-contact-card-container>.bubble-contact-card>.footer>div, .cal-date-time, .cal-time-section, .cal-time-title, .cal-weekday, .call-msg__callback, .cap-ico, .card, .card-content, .cb-info-file-item__thumb-container, .chat-box-member__info.v2, .chat-group-topic__board-details .title-container, .chat-group-topic__board-details .view-all-board-container, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content>.view-all-board-icon-content, .chat-group-topic__item, .chat-group-topic__item .icon-container, .chat-group-topic__item .info-container, .chat-group-topic__item .info-container>.content-container, .chat-group-topic__item .info-container>.content-container>.content-message-container, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-dot-separator, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-info, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-name, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type, .chat-group-topic__item .info-container>.right-action-container, .chat-group-topic__item .info-container>.right-action-container>.change-actions, .chat-group-topic__item .info-container>.right-action-container>.show-details-container, .chat-group-topic__item .info-container>.right-action-container>.show-details-container>.show-details-btn, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.more-action-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container>.timer-reminder, .chat-info-general__action__item, .chat-input-btns, .chat-input__content, .chips, .chips>.html, .chips>img, .composer-container, .composer-container>.main, .composer-container>.main>.counter, .composer-container>.main>.plain-text-wrapper, .composer-container>.main>.rtf-wrapper, .composer-container>.main>.tool-wrapper, .composer-container>.main>.tool-wrapper>.tool.normal, .composer-container>.main>.tool-wrapper>.tool.rtf, .contact-pages.page-container .card-invitation-list, .contact-pages.page-container .card-invitation-list>.card-wrapper, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-user>.card-name, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-user>.card-name, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-user>.card-name, .contact-pages.page-container .card-list-title, .contact-pages.page-container .card-list-view-more, .contact-pages.page-container .contact-filter-wrapper, .contact-pages.page-container .contact-filter-wrapper>.filter, .contact-pages.page-container .contact-filter-wrapper>.filter>.filter-contact, .contact-pages.page-container .contact-item-v2-alpha__section, .contact-pages.page-container .contact-item-v2-last--section, .contact-pages.page-container .contact-item-v2-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.action, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label>.z-business-label--custom, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.new__friend, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.z-business-label--custom, .contact-pages.page-container .empty__invitation, .contact-pages.page-container .empty__search, .contact-pages.page-container .loading__invitation, .contact-pages.page-container>.list-wrapper>.title__list, .conv-action__menu, .conv-action__popup, .conv-item-padding, .conv-item:hover .conv-action__menu, .conv-item:hover .conv-action__popup, .conv-list-empty-wrapper>.image-wrapper, .dd-options, .drag-over-message-view, .drag-over-overlay.dragstart:not(.drag-over-message-view), .drag-over-overlay.dragstart:not(.drag-over-message-view).chatinputboxv2, .entry-content-v2, .file-actions-row, .file-banner-content, .file-banner-content__thumb-container, .file-layout, .file-layout__bot-container, .file-layout__right-container, .file-layout__thumb-container, .file-layout__top-container, .file-progress-row, .file-star-msg-content, .file-star-msg-content__right-block, .file-suggest-item, .file-suggest-item__left-container, .file-suggest-item__right-container, .filter-color-item, .flx, .flx-centralized, .fmsg-send-time, .group-poll-vote-content-item, .group-poll-vote-content__info-creator, .group-setting, .head__page__contact__tab, .header-title-container, .icon__custom__contact__tab__v2>.icon__wrapper, .item-setting, .item-setting-action, .lb-more-menu, .lbl-conv-item, .link-preview-v2, .lockSendMessageBox, .lockSendMessageBox>.message-wrapper, .lockSendMessageBox>.message-wrapper>.icon, .mg-item, .modal, .more-path-icon, .noti-filter-menu-item>.desc-wrap, .noti-item-padding, .otp-error-message, .otp-resend-container, .phone-input, .phone-iso-picker, .photo-sticker__container, .pr-status-content, .preview-contact-wrapper .preview-contact, .preview-contact-wrapper .preview-contact>.user-preview, .profile-update .display-name__error, .profile-update .display-name__hint, .qm-empty-hint, .qm-empty-hint__img, .qm-empty-hint__txt, .qm-mrc, .qr-icon, .qr-red-dot--c-input-outer, .qr-s-di-tut, .qr-s-di-tut__light-bulb, .qrcb-popover-container__body__hint-c__tip, .qri__left>.qri__message, .qrw__extension>i, .resmgmt-test-modal .config-container, .resmgmt-test-modal .config-key-container, .resmgmt-test-modal .indicator-container, .resmgmt-test-modal .path-dir, .resmgmt-test-modal .section, .rl-msg, .rl-msg .rl-msg-content, .search-header, .search-header-c, .search-result-empty__image-wrapper, .search-result-empty__result-wrapper, .search-result-empty__sub-text-wrapper, .search-result-file__file-name, .search-result-file__thumb-container, .search-year-sep, .share-message__thumb, .snippet, .star-msgs__group__item__title, .stressed-test-modal .config-container, .stressed-test-modal .config-key-container, .stressed-test-modal .indicator-container, .stressed-test-modal .path-dir, .stressed-test-modal .section, .tab-content, .tabs-container .tabs-main .tab-container, .tds-banner-download__container, .tds-banner-download__content-wrapper, .tds-banner-download__icon-wrapper, .tds-bubble-info-ecard__icon-wrapper, .tds-modal__backdrop-wrapper, .tds-modal__cancellation-button-wrapper, .tds-modal__description-wrapper, .tds-modal__suggestion-wrapper, .tds-modal__synchronization-button-wrapper, .tds-modal__title-wrapper, .titlebar__btns, .todo-welcome, .z--btn--v2, .z-checkbox, .z-radio, .z-toggle, .z-upgrade-onboard__top_block, .z-upgrade-success__top_block, .zdd-select-all-section, .zl-dropdown--preview-item, .zl-label-add-more, .zl-lbl-component, .zl-modal, .zl-slider__container, .zmenu-item>.menu-icon, article, header, i.btn.titlebar__menu__btn, i.btn.titlebar__menu__btnPreviewPhoto {
+    display: flex;
+}
+
+#calendar-v3 .cal-weekday-v3, #filter-tags-sb .filter-tag-item>.edit-button, #group-creator .create-group__counter, #group-creator .create-group__item__link-icon, #group-creator .create-group__nav, #group-creator .create-group__selected-title, #groupNameInput--change, #searchResultList .global-search-no-result__sub-text-wrapper, #ztoolbar.chat-input-v2, #ztoolbar.chat-input-v2 .drop-ico, .app-info__desc__line, .assignee-preview-item__remain, .block-icon, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code>.qr__photo.qr--invalid, .bubble-contact-card-container>.bubble-contact-card>.footer>div, .call-msg__callback, .cap-ico, .cb-info-file-item__thumb-container, .chat-box-member__info.v2, .chat-group-topic__board-details .title-container, .chat-group-topic__board-details .view-all-board-container, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content>.view-all-board-icon-content, .chat-group-topic__item .icon-container, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-dot-separator, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-info, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-name, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type, .chat-group-topic__item .info-container>.right-action-container, .chat-group-topic__item .info-container>.right-action-container>.change-actions, .chat-group-topic__item .info-container>.right-action-container>.show-details-container, .chat-group-topic__item .info-container>.right-action-container>.show-details-container>.show-details-btn, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.more-action-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container>.timer-reminder, .chat-input-btns, .chbx-media-check-btn, .chips, .chips>.html, .chips>img, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-user, .contact-pages.page-container .card-list-title, .contact-pages.page-container .card-list-view-more, .contact-pages.page-container .contact-filter-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.action, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label>.z-business-label--custom, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.new__friend, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.z-business-label--custom, .contact-pages.page-container .empty__invitation, .contact-pages.page-container .empty__search, .contact-pages.page-container .loading__invitation, .contact-pages.page-container>.list-wrapper>.title__list, .conv-action__menu, .conv-action__popup, .conv-item-padding, .conv-item:hover .conv-action__menu, .conv-item:hover .conv-action__popup, .conv-list-empty-wrapper>.image-wrapper, .dd-options, .drag-over-message-view, .drag-over-overlay.chatinputboxv2, .drag-over-overlay.dragstart:not(.drag-over-message-view), .drag-over-overlay.dragstart:not(.drag-over-message-view).chatinputboxv2, .entry-content-v2, .file-actions-row, .file-banner-content__thumb-container, .file-layout__bot-container, .file-layout__top-container, .file-progress-row, .file-sidebar__option__icon--google-drive-header, .file-suggest-item, .file-suggest-item__left-container, .filter-color-item, .filter-tag-item-edit, .flx-al-c, .flx-centralized, .group-poll-vote-content-item, .head__page__contact__tab, .header-title-container, .icon__custom__contact__tab__v2>.icon__wrapper, .item-setting-action, .lb-more-menu, .lbl-conv-item, .lockSendMessageBox, .lockSendMessageBox>.message-wrapper>.icon, .mg-item, .more-path-icon, .noti-filter-menu-item>.desc-wrap, .noti-item-padding, .otp-error-message, .otp-resend-container, .phone-iso-picker, .photo-sticker__container, .pr-status-content, .preview-contact-wrapper .preview-contact, .qm-empty-hint, .qm-empty-hint__img, .qm-empty-hint__txt, .qm-mrc, .qr-icon, .qr-s-di-tut, .qr-s-di-tut__light-bulb, .qrw__extension>i, .qrw__step--indicator, .resmgmt-test-modal .config-key-container, .resmgmt-test-modal .indicator-container, .resmgmt-test-modal .path-dir, .rl-msg, .rl-msg .rl-msg-content, .search-header, .search-header-c, .search-result-empty__image-wrapper, .search-result-empty__result-wrapper, .search-result-empty__sub-text-wrapper, .search-result-file__thumb-container, .search-year-sep, .share-message__thumb, .stressed-test-modal .config-key-container, .stressed-test-modal .indicator-container, .stressed-test-modal .path-dir, .tabs-container .tabs-main .tab-container, .tds-banner-download__container, .tds-banner-download__content-wrapper, .tds-banner-download__icon-wrapper, .tds-bubble-info-ecard__icon-wrapper, .tds-modal__backdrop-wrapper, .tds-modal__cancellation-button-wrapper, .tds-modal__description-wrapper, .tds-modal__suggestion-wrapper, .tds-modal__synchronization-button-wrapper, .tds-modal__title-wrapper, .titlebar__btns, .z--btn--v2, .z-checkbox, .z-radio, .z-toggle, .z-upgrade-success__top_block, .zdd-select-all-section, .zl-dropdown--preview-item, .zl-label-add-more, .zl-slider__container, .zmenu-item>.menu-icon, header, i.btn.titlebar__menu__btn, i.btn.titlebar__menu__btnPreviewPhoto {
+    align-items: center;
+}
+
+#calendar-v3 .cal-weekday-v3, #filter-tags-sb .filter-tag-item>.edit-button, #group-creator .create-group__counter, #group-creator .create-group__item__link-icon, #group-creator .create-group__nav, #group-creator .create-group__selected-title, #groupNameInput--change, #searchResultList .global-search-no-result__sub-text-wrapper, #ztoolbar.chat-input-v2, #ztoolbar.chat-input-v2 .drop-ico, .app-info__desc__line, .assignee-preview-item__remain, .block-icon, .bubble-contact-card-container>.bubble-contact-card>.content, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code>.qr__photo.qr--invalid, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper.off--qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper>.user-info.off--qr-code, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper>.user-info>.user-name-wrapper, .bubble-contact-card-container>.bubble-contact-card>.footer, .bubble-contact-card-container>.bubble-contact-card>.footer>div, .cal-date-time, .cal-time-section, .cal-time-title, .cal-weekday, .call-msg__callback, .cap-ico, .card, .card-content, .cb-info-file-item__thumb-container, .chat-box-member__info.v2, .chat-group-topic__board-details .title-container, .chat-group-topic__board-details .view-all-board-container, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content>.view-all-board-icon-content, .chat-group-topic__item, .chat-group-topic__item .icon-container, .chat-group-topic__item .info-container, .chat-group-topic__item .info-container>.content-container, .chat-group-topic__item .info-container>.content-container>.content-message-container, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-dot-separator, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-info, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-name, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type, .chat-group-topic__item .info-container>.right-action-container, .chat-group-topic__item .info-container>.right-action-container>.change-actions, .chat-group-topic__item .info-container>.right-action-container>.show-details-container, .chat-group-topic__item .info-container>.right-action-container>.show-details-container>.show-details-btn, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.more-action-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container>.timer-reminder, .chat-info-general__action__item, .chat-input-btns, .chat-input__content, .chips, .chips>.html, .chips>img, .composer-container, .composer-container>.main, .composer-container>.main>.counter, .composer-container>.main>.plain-text-wrapper, .composer-container>.main>.rtf-wrapper, .composer-container>.main>.tool-wrapper, .composer-container>.main>.tool-wrapper>.tool.normal, .composer-container>.main>.tool-wrapper>.tool.rtf, .contact-pages.page-container .card-invitation-list, .contact-pages.page-container .card-invitation-list>.card-wrapper, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-user>.card-name, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-user>.card-name, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-user, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-user>.card-name, .contact-pages.page-container .card-list-title, .contact-pages.page-container .card-list-view-more, .contact-pages.page-container .contact-filter-wrapper, .contact-pages.page-container .contact-filter-wrapper>.filter, .contact-pages.page-container .contact-filter-wrapper>.filter>.filter-contact, .contact-pages.page-container .contact-item-v2-alpha__section, .contact-pages.page-container .contact-item-v2-last--section, .contact-pages.page-container .contact-item-v2-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.action, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.label>.z-business-label--custom, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.new__friend, .contact-pages.page-container .contact-item-v2-wrapper>.friend-info>.detail-info>.name-wrapper>.z-business-label--custom, .contact-pages.page-container .empty__invitation, .contact-pages.page-container .empty__search, .contact-pages.page-container .loading__invitation, .contact-pages.page-container>.list-wrapper>.title__list, .conv-action__menu, .conv-action__popup, .conv-item-padding, .conv-item:hover .conv-action__menu, .conv-item:hover .conv-action__popup, .conv-list-empty-wrapper>.image-wrapper, .dd-options, .drag-over-message-view, .drag-over-overlay.dragstart:not(.drag-over-message-view), .drag-over-overlay.dragstart:not(.drag-over-message-view).chatinputboxv2, .entry-content-v2, .file-actions-row, .file-banner-content, .file-banner-content__thumb-container, .file-layout, .file-layout__bot-container, .file-layout__right-container, .file-layout__thumb-container, .file-layout__top-container, .file-progress-row, .file-star-msg-content, .file-star-msg-content__right-block, .file-suggest-item, .file-suggest-item__left-container, .file-suggest-item__right-container, .filter-color-item, .flx, .flx-centralized, .fmsg-send-time, .group-poll-vote-content-item, .group-poll-vote-content__info-creator, .group-setting, .head__page__contact__tab, .header-title-container, .icon__custom__contact__tab__v2>.icon__wrapper, .item-setting, .item-setting-action, .lb-more-menu, .lbl-conv-item, .link-preview-v2, .lockSendMessageBox, .lockSendMessageBox>.message-wrapper, .lockSendMessageBox>.message-wrapper>.icon, .mg-item, .modal, .more-path-icon, .noti-filter-menu-item>.desc-wrap, .noti-item-padding, .otp-error-message, .otp-resend-container, .phone-input, .phone-iso-picker, .photo-sticker__container, .pr-status-content, .preview-contact-wrapper .preview-contact, .preview-contact-wrapper .preview-contact>.user-preview, .profile-update .display-name__error, .profile-update .display-name__hint, .qm-empty-hint, .qm-empty-hint__img, .qm-empty-hint__txt, .qm-mrc, .qr-icon, .qr-red-dot--c-input-outer, .qr-s-di-tut, .qr-s-di-tut__light-bulb, .qrcb-popover-container__body__hint-c__tip, .qri__left>.qri__message, .qrw__extension>i, .resmgmt-test-modal .config-container, .resmgmt-test-modal .config-key-container, .resmgmt-test-modal .indicator-container, .resmgmt-test-modal .path-dir, .resmgmt-test-modal .section, .rl-msg, .rl-msg .rl-msg-content, .search-header, .search-header-c, .search-result-empty__image-wrapper, .search-result-empty__result-wrapper, .search-result-empty__sub-text-wrapper, .search-result-file__file-name, .search-result-file__thumb-container, .search-year-sep, .share-message__thumb, .snippet, .star-msgs__group__item__title, .stressed-test-modal .config-container, .stressed-test-modal .config-key-container, .stressed-test-modal .indicator-container, .stressed-test-modal .path-dir, .stressed-test-modal .section, .tab-content, .tabs-container .tabs-main .tab-container, .tds-banner-download__container, .tds-banner-download__content-wrapper, .tds-banner-download__icon-wrapper, .tds-bubble-info-ecard__icon-wrapper, .tds-modal__backdrop-wrapper, .tds-modal__cancellation-button-wrapper, .tds-modal__description-wrapper, .tds-modal__suggestion-wrapper, .tds-modal__synchronization-button-wrapper, .tds-modal__title-wrapper, .titlebar__btns, .todo-welcome, .z--btn--v2, .z-checkbox, .z-radio, .z-toggle, .z-upgrade-onboard__top_block, .z-upgrade-success__top_block, .zdd-select-all-section, .zl-dropdown--preview-item, .zl-label-add-more, .zl-lbl-component, .zl-modal, .zl-slider__container, .zmenu-item>.menu-icon, article, header, i.btn.titlebar__menu__btn, i.btn.titlebar__menu__btnPreviewPhoto {
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+}
+
+#calendar-v3 .cal-weekday-v3, #filter-tags-sb .filter-tag-item>.edit-button, #group-creator .create-group__item__link-icon, #group-creator .create-group__nav, #searchResultList .global-search-no-result__sub-text-wrapper, .assignee-preview-item__remain, .block-icon, .bubble-contact-card-container>.bubble-contact-card>.content>.qr-code>.qr__photo.qr--invalid, .bubble-contact-card-container>.bubble-contact-card>.content>.user-info-wrapper>.user-info.off--qr-code, .bubble-contact-card-container>.bubble-contact-card>.footer, .bubble-contact-card-container>.bubble-contact-card>.footer>div, .cal-date-time, .cal-time-section, .cal-time-title, .cal-weekday, .call-msg__callback, .cap-ico, .cb-info-file-item__thumb-container, .chat-group-topic__board-details .view-all-board-container, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content, .chat-group-topic__board-details .view-all-board-container>.view-all-board-content>.view-all-board-icon-content, .chat-group-topic__item .icon-container, .chat-group-topic__item .info-container>.content-container, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-dot-separator, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-name, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-thumb-preview, .chat-group-topic__item .info-container>.content-container>.content-message-container>.content-message-type, .chat-group-topic__item .info-container>.right-action-container, .chat-group-topic__item .info-container>.right-action-container>.change-actions, .chat-group-topic__item .info-container>.right-action-container>.show-details-container, .chat-group-topic__item .info-container>.right-action-container>.show-details-container>.show-details-btn, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.more-action-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container, .chat-group-topic__item .info-container>.right-action-container>.time-region-container>.timer-container>.timer-reminder, .chbx-media-check-btn, .chips>.html, .chips>img, .contact-pages.page-container .card-invitation-list>.card-wrapper.received--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.sent--friend>.card-cta, .contact-pages.page-container .card-invitation-list>.card-wrapper.suggest--friend>.card-cta, .contact-pages.page-container .card-list-view-more, .contact-pages.page-container .empty__invitation, .contact-pages.page-container .empty__search, .contact-pages.page-container .loading__invitation, .conv-action__menu, .conv-action__popup, .conv-item:hover .conv-action__menu, .conv-item:hover .conv-action__popup, .conv-list-empty-wrapper>.image-wrapper, .drag-over-message-view, .drag-over-overlay.chatinputboxv2, .drag-over-overlay.dragstart:not(.drag-over-message-view), .drag-over-overlay.dragstart:not(.drag-over-message-view).chatinputboxv2, .file-banner-content__thumb-container, .file-layout__thumb-container, .file-sidebar__option__icon--google-drive-header, .filter-color-item, .filter-tag-item-edit, .flx-center, .flx-centralized, .item-setting-action, .lockSendMessageBox, .more-path-icon, .otp-error-message, .otp-resend-container, .photo-sticker__container, .qm-empty-hint, .qm-empty-hint__img, .qm-empty-hint__txt, .qr-icon, .qr-red-dot--c-input-outer, .qr-s-di-tut__light-bulb, .qrw__extension>i, .qrw__step--indicator, .search-result-empty__image-wrapper, .search-result-empty__result-wrapper, .search-result-empty__sub-text-wrapper, .search-result-file__thumb-container, .search-year-sep, .tabs-container .tabs-main .tab-container, .tds-banner-download__container, .tds-banner-download__content-wrapper, .tds-banner-download__icon-wrapper, .tds-bubble-info-ecard__icon-wrapper, .tds-modal__backdrop-wrapper, .tds-modal__cancellation-button-wrapper, .tds-modal__description-wrapper, .tds-modal__suggestion-wrapper, .tds-modal__synchronization-button-wrapper, .tds-modal__title-wrapper, .z--btn--v2, .z-toggle, .z-upgrade-success__top_block, .zl-slider__container, .zmenu-item>.menu-icon {
+    justify-content: center;
+}
+
+.b-item-thumb-image__thumb-default, .card--group-photo__row__item img.card--group-photo__row__item__photo, .card--link-img, .card--link-img.default, .cb-info-file-item-overlay__check, .chat-message-picture__gif__thumb, .chat-message-picture__photo>img, .fa, .file-tick__icon-setting, .group-topic>.topic-banner__thumb-default, .image-placeholder, .image-show__thumb, .link-placeholder, .link-preview-v2 .preview-thumb-link, .link-thumb, .link-thumb.default, .media-item__file-type.photo, .media-store-preview-item__picture, .quote-banner-thumb, .quote-banner-thumb-link, .quote-base__close-icon, .rl-msg .rl-link-thumb .rl-thumb-lnk__thumb-default, .thumb-default, .thumb-img-suggest, img.chat-message-picture__photo {
+    display: inline-block;
+    font: normal normal normal 14px/1 zalo-font;
+    font-size: inherit;
+    text-rendering: auto;
+    text-shadow: none;
+    line-height: normal!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#contact-search, #main-tab, .bs, .chat-info-file__group__items, .chat-info-link__group__items, .chat-input__content, .chat-input__tools, .message-view__banner, .message-view__topic, .nav__content, .sticker-sorter__header, article, aside, header {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.checkbox-input, .composer-container, .contact-pages.page-container, .contact-pages.page-container .contact-filter-wrapper>.filter, .contact-tab-v2, .lb-more-menu, .lqip, .lqip__preview-thumb:before, .phone-input, .share-message__groupphoto, .share-message__thumb, .w100 {
+    width: 100%;
+}
+
+.all-transition, .chips, .chips.--l>.post, .chips.--m>.post, .leftbar-tab, .z--btn--v2 {
+    -webkit-transition: all .1s cubic-bezier(.645,.045,.355,1);
+    transition: all .1s cubic-bezier(.645,.045,.355,1);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: SegoeuiPc,Segoe UI,San Francisco,Helvetica Neue,Helvetica,Lucida Grande,Roboto,Ubuntu,Tahoma,Microsoft Sans Serif,Arial,sans-serif;
+    color: var(--text-primary);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    text-shadow: 0 0 0 var(--BA30);
+    letter-spacing: .2px;
+    filter: grayscale(0);
+}
+
+nav {
+    width: 400px;
+    height: 100vh;
+    background-color: var(--layer-background);
+    border-right: 1px solid var(--border);
+    --conversation-list-height: calc(100vh - 68.5px);
+    --conversation-list-height-have-title-bar: calc(100vh - 77.5px);
+    --update-btn-height: 0px;
+}
+
+#app, #app-page {
+    overflow: hidden;
+    height: 100%;
+}
+
+#app {
+    display: block!important;
+    width: 100%;
+}
+
+#container {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#sidebarNav {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#main-tab {
+    width: 64px;
+    flex: none;
+    box-sizing: border-box;
+    background: var(--layer-background-leftmenu);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.btn {
+    font-size: 1.125rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    line-height: 0;
+    cursor: pointer;
+    margin: 0;
+    color: var(--button-tertiary-primary-text);
+}
+
+.leftbar-tab {
+    height: 64px;
+    color: var(--icon-on-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftbar-tab:hover {
+    background-color: var(--layer-background-leftmenu-hover);
+    cursor: pointer;
+}
+
+.leftbar-tab 
+.internal-icon {
+    font-size: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.leftbar-tab.chat-message.first-selected, .leftbar-tab.chat-message.last-selected, .leftbar-tab.selected {
+    background: var(--layer-background-leftmenu-selected);
+}
+
+/* Avatar*/
+.top-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+
+.top-bar .avatar .a-child {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+/* Sub tab */
+#sub-tab {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    position: relative;
+    width: 400px;
+}
+
+/* Sub tab - Top part */
+.conv-list-semi-compact {
+    min-width: calc(400px - 68px);
+}
+
+#contact-search {
+    height: 64px;
+    min-height: 64px;
+    position: relative;
+    background-color: var(--layer-background);
+    transition: visibility 0s,opacity .5s linear;
+    overflow: visible;
+    padding: 0 16px;
+    grid-template-columns: auto 32px 32px;
+}
+
+#contact-search
+.group-search {
+    position: relative;
+    display: flex;
+    height: 32px;
+}
+
+#contact-search
+.group-search__icon {
+    position: absolute;
+    top: 0;
+    font-size: .875rem;
+    width: .875rem;
+    height: .875rem;
+    line-height: 0;
+    color: var(--icon-primary);
+    bottom: 0;
+    margin: auto 12px;
+}
+
+#contact-search-input {
+    height: 32px;
+    background-color: var(--field-bg-filled);
+    border: 1px solid var(--field-bg-filled);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    line-height: 32px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+
+.fake-textholder {
+    color: var(--input-placeholder-wh);
+    position: absolute;
+    left: 32px;
+    background: transparent;
+    pointer-events: none;
+    visibility: visible;
+    bottom: 0;
+    display: list-item;
+    height: 100%;
+    padding: 2px 0;
+    vertical-align: bottom;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.gridv2 {
+    display: grid;
+}
+
+.gridv2.small {
+    gap: 4px;
+}
+
+.gridv2 .grid-item {
+    transition: all .15s;
+}
+
+.gridv2.small.grid-fluid-8 {
+    grid-template-columns: calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px) calc(12.5% - 3.5px);
+}
+
+.z--btn--v2.icon-only {
+    padding: 0;
+}
+
+.z--btn--v2.btn-tertiary-neutral {
+    background-color: var(--button-tertiary-neutral-normal);
+    color: var(--button-neutral-text);
+}
+
+.z--btn--v2.medium {
+    height: 32px;
+}
+
+.z--btn--v2, .z--btn--v2.small {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.z--btn--v2.icon-only.medium {
+    max-width: 32px;
+    min-width: 32px;
+}
+
+.z--btn--v2.icon-only.medium:hover {
+    background-color: var(--layer-background-leftmenu-hover);
+}
+
+.z--btn--v2 {
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 16px;
+    font-size: 1rem;
+    width: fit-content;
+    min-width: max-content;
+}
+
+.z--btn--v2.icon-only-2.medium>.pre, .z--btn--v2.icon-only.medium>.pre {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.z--btn--v2.icon-only-2>.post, .z--btn--v2.icon-only>.post, .z--btn--v2.icon-only>.pre {
+    margin: 0;
+}
+
+.z--btn--v2 i.pre {
+    margin-right: 4px;
+    margin-left: -8px;
+}
+
+/* Sub tab - Contact part */
+.contact-tab-v2 {
+    height: calc(100% - 64px);
+    position: absolute;
+    top: 64px;
+}
+
+.contact-tab-v2>.menu-contact {
+    height: var(--conversation-list-height);
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+    transition: visibility 0s,opacity .5s linear;
+}
+
+.contact-tab-v2>.menu-contact>.menu-item.chat-message.first-selected, .contact-tab-v2>.menu-contact>.menu-item.chat-message.last-selected, .contact-tab-v2>.menu-contact>.menu-item.selected {
+    background: var(--layer-background-selected);
+}
+
+.contact-tab-v2>.menu-contact>.menu-item {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    height: 56px;
+    padding: 0 18px;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.contact-tab-v2>.menu-contact>.menu-item>.menu__name {
+    margin: 0;
+    padding: 0 14px;
+}
+
+.middle-flex {
+    align-items: center;
+}
+
+/* Resize handle*/
+.resize-handle {
+    width: 8px;
+    height: 100vh;
+    cursor: ew-resize;
+    position: absolute;
+    top: 0;
+    left: calc(400px - 4px);
+    z-index: 7;
+}
+
+/* Content */
+#content {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
 

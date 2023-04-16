@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <title>Zalo Web</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link id="favico" rel="icon" type="image/png" href="https://zalo-chat-static.zadn.vn/v1/favicon-96x96.v1.png" src="https://zalo-chat-static.zadn.vn/v1/favicon-96x96.v1.png">
+<body>
+    <div id="app" style="display: none;">
+        <div id="container">
+            <!-- Side Bar --> 
+            <nav id="sidebarNav">
+                <!-- Main Tab-->
+                <div id="main-tab" style="z-index: 11;">
+                    <!-- Nav tabs top -->
+                    <div class="top-bar">
+                        <div class="avatar" title="Mai Nguyễn Ngọc Huy">
+                            <img src="./assets/images/avatar.jpg" alt="avatar" class="a-child">
+                        </div>
+                        <div class="nav__tabs__top">
+                            <div class="clickable leftbar-tab flx flx-col flx-al-c flx-center rel" title="Tin nhắn">
+                                <i class="fa-regular fa-comment internal-icon"></i> <!-- nếu đã chọn chuyển -light thành -solid -->
+                            </div>
+                            <div class="clickable leftbar-tab flx flx-col flx-al-c flx-center rel selected" title="Danh bạ">
+                                <i class="fa-regular fa-address-book internal-icon"></i>
+                            </div>
+                            <div class="clickable leftbar-tab flx flx-col flx-al-c flx-center rel" title="To-do">
+                                <i class="fa-regular fa-square-check internal-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav tabs bottom -->
+                    <div class="nav__tabs__bottom">
+                        <div class="leftbar-tab" title="My Cloud">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div class="leftbar-tab" title="Công cụ">
+                            <i class="fa-solid fa-toolbox"></i>
+                        </div>
+                        <div class="leftbar-tab" title="Cài đặt">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub Tab -->
+                <div id="sub-tab" class="flx-cell flx flx-col rel ovf-hidden conv-list-semi-compact" style="z-index: 5;">
+                    <div id="contact-search" class="gridv2 flx-al-c ovf-hidden web fluid small grid-fluid-8" style="grid-template-columns: auto 32px 32px;">
+                        <div class="group-search grid-item">
+                            <div>
+                                <div style="top: 40px; left: -1px; position: absolute; pointer-events: none;"></div>
+                                <i class="tooltip btn fa fa-search group-search__icon"></i>
+                            </div>
+                            <span class="flx-al-c fake-textholder truncate fk-normal" style="display: flex; height: 90%;">Tìm kiếm</span>
+                            <input id="contact-search-input" autocomplete="off" type="text" maxlength="100" aria-autocomplete="list" tabindex="-1" spellcheck="false">
+                        </div>
+                        <div class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" title="Thêm bạn">
+                            <i class="fa-solid fa-plus pre"></i>
+                        </div>
+                        <div class="z--btn--v2 btn-tertiary-neutral medium  --rounded icon-only" title="Tạo nhóm chat">
+                            <i class="fa-solid fa-user-group pre"></i>
+                        </div>
+                    </div>
+                    <div id="contact-tab" class="contact-tab-v2">
+                        <div class="menu-contact">
+                            <div class="menu-item flx middle-flex clickable selected">
+                                <i class="fa-solid fa-user-group menu__icon"></i>
+                                <p class="menu__name">
+                                    <span>Danh sách bạn bè</span>
+                                </p>
+                            </div>
+                            <div class="menu-item flx middle-flex clickable">
+                                <i class="fa-solid fa-users-line menu__icon"></i>
+                                <p class="menu__name">
+                                    <span>Danh sách nhóm</span>
+                                </p>
+                            </div>
+                            <div class="menu-item flx middle-flex clickable">
+                                <i class="fa-regular fa-envelope-open menu__icon"></i>
+                                <p class="menu__name">
+                                    <span>Lời mời kết bạn</span>
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resize-handle"></div>
+                <div class="resize-handle"></div>
+            </nav>
+            
+            <div id="content">
+                <div class="title-content">
+                    <div class="menu-item flx middle-flex clickable selected">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p>
+                            <span>Danh sách bạn bè</span>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="mid-content">
+                    <h4>Bạn bè (<a id="num__of__friends">0</a>)</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
