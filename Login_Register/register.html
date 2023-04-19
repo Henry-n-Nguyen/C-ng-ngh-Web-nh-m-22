@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalo - Register</title> 	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+
+    <div class="main">
+        
+        <form action="" method="POST" class="form" id="register-form">
+            <h3 class="heading">Đăng ký</h3>
+      
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="phone_number" class="form-label">Số điện thoại</label>
+                <input id="phone_number" name="phone_number" type="tel" placeholder="VD: 0123456789" class="form-control">
+                <span class="form-message"></span>
+            </div>
+      
+            <div class="form-group">
+                <label for="password" class="form-label">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Nhập lại mật khẩu</label>
+                <input id="password_confirmation" name="password_confirmation" placeholder="Nhập lại mật khẩu" type="password" class="form-control">
+                <span class="form-message"></span>
+            </div>
+        
+            <button class="form-submit">Đăng ký</button>
+
+            <div class="login-by-another">
+                <a href="" class="login-google">
+                    <i class="fa-brands fa-google" style="color: #eb1e1e;"></i>
+                    <p>Đăng nhập bằng Google</p>
+                </a>
+
+                <a href="" class="login-facebook">
+                    <i class="fa-brands fa-facebook" style="color: #095cec;"></i>
+                    <p>Đăng nhập bằng Facebook</p>
+                </a>
+            </div>
+
+            <a href="" class="forgot-password">Đã có tài khoản?
+                <button class="register-btn">Đăng nhập</button>
+            </a>
+            
+
+        </form>
+      
+    </div>
+
+    <!-- CSS -->
+    <style>
+        
+    </style>
+
+    <!-- ================ Validator 1 ================-->
+    
+    <script src="./validator.js"></script>
+
+    <script>
+
+        // điều mình mong muốn
+        Validator({
+            form: '#register-form',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#phone_number'),
+                Validator.isPhoneNumber('#phone_number', 10, 11),
+                Validator.isRequired('#password'),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirmed('#password_confirmation', function() {
+                    return document.querySelector('#register-form #password').value;
+                }, 'Mật khẩu nhập lại không chính xác')
+            ],
+            onSubmit: function(data) {
+                //Call API 
+                console.log(data);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
