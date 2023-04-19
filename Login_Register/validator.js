@@ -163,3 +163,12 @@ Validator.isPhoneNumber = function(selector, minLength, maxLength, message) {
         }
     }
 }
+
+Validator.isConfirmed = function(selector, getConfirmValue, message) {
+    return {
+        selector,
+        test: (value) => {
+            return value === getConfirmValue() ? undefined : message || 'Giá trị nhập vào không chính xác';
+        }
+    }
+}
