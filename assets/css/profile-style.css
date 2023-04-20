@@ -1,0 +1,111 @@
+/* Valo */
+.valo {
+	background-color: #007bff;
+	color: #fff;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.valo h1 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+/* Back button */
+.back-button {
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+}
+
+/* Top section */
+.top-section {
+	position: relative;
+}
+
+.cover-photo {
+	height: 200px;
+	background-image: url(https://i.imgur.com/twF7i1d.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.profile-photo {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 130px;
+	border: 5px solid #fff;
+}
+
+.profile-info {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 310px;
+}
+
+.name {
+	font-size: 2rem;
+	margin-left: 35px;
+}
+
+.job-title {
+	font-size: 1.5rem;
+	margin-top: 10px;
+}
+
+.contact-info {
+	list-style: none;
+	margin: 20px 0 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.contact-label {
+    font-weight: bold;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.contact-value {
+    flex: 3;
+}
+
+.edit-button {
+	background-color: #007bff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: 2px white;
+	margin-right: 20px;
+	cursor: pointer;
+    color: #fff;
+	text-decoration: none;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+}
+
