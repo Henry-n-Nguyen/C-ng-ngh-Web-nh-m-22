@@ -1,0 +1,55 @@
+/* Global */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Setting */
+.setting {
+	background-color: #007bff;
+	color: #fff;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.setting h1 {
+	font-size: 1.5rem;
+}
+
+.back-button {
+	position: absolute;
+	left: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.setting-list {
+	margin-top: 50px;
+}
+
+.setting-list ul {
+	list-style: none;
+}
+
+.setting-list li {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.setting-label {
+	font-size: 1.2rem;
+}
+
+.edit-button {
+	color: black;
+	font-size: 1rem;
+	text-decoration: none;
+}
