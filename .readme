@@ -1,0 +1,2 @@
+ Tạo migrations:
+npx sequelize-cli db:migrate
