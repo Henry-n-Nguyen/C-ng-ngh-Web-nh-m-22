@@ -40,9 +40,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING,
       },
-      positionId: {
-        type: Sequelize.STRING,
-      },
+
       image: {
         type: Sequelize.STRING,
       },

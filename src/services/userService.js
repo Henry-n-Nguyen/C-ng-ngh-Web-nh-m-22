@@ -74,11 +74,9 @@ let handleUserLogin = (email, password) => {
 };
 
 let createNewUSer = (data) => {
-  console.log(data);
   return new Promise(async (resolve, reject) => {
     try {
       let check = await checkUserEmail(data.email);
-      console.log(check);
       if (check === true) {
         resolve({
           errCode: 1,
