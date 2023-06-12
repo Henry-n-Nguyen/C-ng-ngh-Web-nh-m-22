@@ -11,6 +11,10 @@ const nextConfig = {
       "lh3.googleusercontent.com",
     ],
   },
+  webpack: (config) => {
+    config.externals = [...config.externals, "bcrypt"];
+    return config;
+  },
 };
 
 module.exports = nextConfig;

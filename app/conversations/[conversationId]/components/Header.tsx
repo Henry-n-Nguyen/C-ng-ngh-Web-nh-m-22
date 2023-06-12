@@ -1,10 +1,11 @@
 "use client";
 
 import { HiChevronLeft } from "react-icons/hi";
-import { HiEllipsisHorizontal } from "react-icons/hi2";
-import { useMemo, useState } from "react";
+import { HiEllipsisHorizontal, HiPhone, HiVideoCamera } from "react-icons/hi2";
+import { useMemo, useState, useCallback } from "react";
 import Link from "next/link";
 import { Conversation, User } from "@prisma/client";
+import axios from "axios";
 
 import useOtherUser from "@/app/hooks/useOtherUser";
 import useActiveList from "@/app/hooks/useActiveList";
@@ -12,6 +13,7 @@ import useActiveList from "@/app/hooks/useActiveList";
 import Avatar from "@/app/components/Avatar";
 import AvatarGroup from "@/app/components/AvatarGroup";
 import ProfileDrawer from "./ProfileDrawer";
+import { useRouter } from "next/navigation";
 
 interface HeaderProps {
   conversation: Conversation & {
@@ -20,6 +22,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ conversation }) => {
+  const router = useRouter();
   const otherUser = useOtherUser(conversation);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -32,6 +35,23 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
 
     return isActive ? "Đang hoạt động" : "Ngoại tuyến";
   }, [conversation, isActive]);
+
+  // const handleCall = useCallback(() => {
+  //   axios.post("/api/messages", {
+  //     isCall: true,
+  //     conversationId: conversation.id,
+  //   });
+  //   router.push(`/room/${conversation.id}`);
+  // }, [conversation, router]);
+
+  const handleVideoCall = useCallback(() => {
+    axios.post("/api/messages", {
+      isCall: true,
+      conversationId: conversation.id,
+    });
+    router.push(`/room/${conversation.id}`);
+  }, [conversation, router]);
+
   return (
     <>
       <ProfileDrawer
@@ -77,14 +97,34 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             </div>
           </div>
         </div>
-        <HiEllipsisHorizontal
-          size={32}
-          onClick={() => setDrawerOpen(true)}
-          className="text-sky-500
-        cursor-pointer
-        hover:text-sky-600
-        transition"
-        />
+        <div className="flex gap-4">
+          {/* <HiPhone
+            size={32}
+            onClick={() => handleCall()}
+            className="text-sky-500
+            cursor-pointer
+            hover:text-sky-600
+            transition"
+          /> */}
+          {!conversation.isGroup && (
+            <HiVideoCamera
+              size={32}
+              onClick={() => handleVideoCall()}
+              className="text-sky-500
+              cursor-pointer
+              hover:text-sky-600
+              transition"
+            />
+          )}
+          <HiEllipsisHorizontal
+            size={32}
+            onClick={() => setDrawerOpen(true)}
+            className="text-sky-500
+            cursor-pointer
+            hover:text-sky-600
+            transition"
+          />
+        </div>
       </div>
     </>
   );
