@@ -89,7 +89,7 @@ export async function POST(request: Request) {
         users: true,
       },
     });
-
+    
     // Update all connections with new conversation
     newConversation.users.map((user) => {
       if (user.email) {

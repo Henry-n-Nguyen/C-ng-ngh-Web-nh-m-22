@@ -60,7 +60,7 @@ export async function POST(request: Request, { params }: { params: IParams }) {
         },
       },
     });
-
+    
     // Update all connection with new seen
     await pusherServer.trigger(currentUser.email, "conversation:update", {
       id: conversationId,

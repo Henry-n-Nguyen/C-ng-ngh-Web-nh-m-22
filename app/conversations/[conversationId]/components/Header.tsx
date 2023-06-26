@@ -36,6 +36,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
     return isActive ? "Đang hoạt động" : "Ngoại tuyến";
   }, [conversation, isActive]);
 
+  const handleCall = useCallback(() => {
   // const handleCall = useCallback(() => {
   //   axios.post("/api/messages", {
   //     isCall: true,
@@ -52,6 +53,8 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
     router.push(`/room/${conversation.id}`);
   }, [conversation, router]);
 
+  const handleVideoCall = () => {};
+    
   return (
     <>
       <ProfileDrawer
@@ -98,6 +101,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
           </div>
         </div>
         <div className="flex gap-4">
+          <HiPhone
           {/* <HiPhone
             size={32}
             onClick={() => handleCall()}
@@ -105,6 +109,15 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             cursor-pointer
             hover:text-sky-600
             transition"
+          />
+          <HiVideoCamera
+            size={32}
+            onClick={() => handleVideoCall()}
+            className="text-sky-500
+            cursor-pointer
+            hover:text-sky-600
+            transition"
+          />
           /> */}
           {!conversation.isGroup && (
             <HiVideoCamera
