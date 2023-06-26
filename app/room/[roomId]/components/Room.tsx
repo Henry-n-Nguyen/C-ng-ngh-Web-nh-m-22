@@ -38,7 +38,6 @@ const Body: React.FC<BodyProps> = ({ roomId, user, conversation }) => {
   const [micActive, setMicActive] = useState(true);
   const [cameraActive, setCameraActive] = useState(true);
   const otherUser = useOtherUser(conversation);
-
   const router = useRouter();
 
   const host = useRef(false);
@@ -190,7 +189,6 @@ const Body: React.FC<BodyProps> = ({ roomId, user, conversation }) => {
         console.log(error);
       });
   };
-
   const handleAnswerReceived = (answer: RTCSessionDescriptionInit) => {
     rtcConnection
       .current!.setRemoteDescription(answer)
