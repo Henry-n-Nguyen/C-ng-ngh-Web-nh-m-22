@@ -65,17 +65,18 @@ export async function POST(request: Request) {
 
     const lastMessage =
       updatedConversation.messages[updatedConversation.messages.length - 1];
-
     await pusherServer.trigger(conversationId, "messages:new", newMessage);
     const lastMessage =
       updatedConversation.messages[updatedConversation.messages.length - 1];
 
     if (isCall) {
       updatedConversation.users.map((user) => {
-        pusherServer.trigger(user.email!, "recive-call", {
-          id: conversationId,
-          user: currentUser,
-        });
+        if (user.email !== currentUser.email) {
+          pusherServer.trigger(user.email!, "recive-call", {
+            id: conversationId,
+            user: currentUser,
+          });
+        }
       });
     }
 
