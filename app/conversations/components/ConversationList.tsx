@@ -9,6 +9,7 @@ import clsx from "clsx";
 import { find } from "lodash";
 
 import useConversation from "@/app/hooks/useConversation";
+import { pusherClient } from "@/app/libs/pusher";
 import GroupChatModal from "@/app/components/modals/GroupChatModal";
 import ConversationBox from "./ConversationBox";
 import { FullConversationType, FullCallType } from "@/app/types";
@@ -42,6 +43,8 @@ const ConversationList: React.FC<ConversationListProps> = ({
     if (!pusherKey) {
       return;
     }
+
+    pusherClient.subscribe(pusherKey);
 
     const newHandler = (conversation: FullConversationType) => {
       setItems((current) => {
@@ -80,6 +83,15 @@ const ConversationList: React.FC<ConversationListProps> = ({
       setRoomId(call.id);
       setIsCallOpen(true);
     };
+
+    pusherClient.bind("conversation:new", newHandler);
+    pusherClient.bind("conversation:update", updateHandler);
+    pusherClient.bind("conversation:remove", removeHandler);
+    pusherClient.bind("recive-call", recipveCall);
+
+    return () => {
+      pusherClient.unsubscribe(pusherKey);
+    };
   }, [pusherKey, router, conversationId]);
 
   return (
@@ -109,7 +121,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
       border-r
       border-gray-200
       `,
-          isOpen ? "hidden" : "block w-full- left-0"
+          isOpen ? "hidden" : "block w-full left-0"
         )}>
         <div className="px-5">
           <div className="flex justify-between mb-4 pt-4">

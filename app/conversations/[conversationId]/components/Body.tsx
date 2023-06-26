@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 
+import { pusherClient } from "@/app/libs/pusher";
 import useConversation from "@/app/hooks/useConversation";
 import MessageBox from "./MessageBox";
 import { FullMessageType } from "@/app/types";
@@ -23,6 +24,7 @@ const Body: React.FC<BodyProps> = ({ initialMessages = [] }) => {
   }, [conversationId]);
 
   useEffect(() => {
+    pusherClient.subscribe(conversationId);
     bottomRef?.current?.scrollIntoView();
 
     const messageHandler = (message: FullMessageType) => {
@@ -46,6 +48,14 @@ const Body: React.FC<BodyProps> = ({ initialMessages = [] }) => {
           return currentMessage;
         })
       );
+    };
+
+    pusherClient.bind("messages:new", messageHandler);
+    pusherClient.bind("messages:update", updateMessagesHandler);
+    return () => {
+      pusherClient.unsubscribe(conversationId);
+      pusherClient.unbind("messages:new", messageHandler);
+      pusherClient.unbind("messages:update", updateMessagesHandler);
     };
   }, [conversationId]);
 

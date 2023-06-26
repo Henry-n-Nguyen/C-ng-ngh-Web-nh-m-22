@@ -37,6 +37,15 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
   }, [conversation, isActive]);
 
   const handleCall = useCallback(() => {
+  // const handleCall = useCallback(() => {
+  //   axios.post("/api/messages", {
+  //     isCall: true,
+  //     conversationId: conversation.id,
+  //   });
+  //   router.push(`/room/${conversation.id}`);
+  // }, [conversation, router]);
+
+  const handleVideoCall = useCallback(() => {
     axios.post("/api/messages", {
       isCall: true,
       conversationId: conversation.id,
@@ -45,7 +54,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
   }, [conversation, router]);
 
   const handleVideoCall = () => {};
-
+    
   return (
     <>
       <ProfileDrawer
@@ -93,6 +102,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
         </div>
         <div className="flex gap-4">
           <HiPhone
+          {/* <HiPhone
             size={32}
             onClick={() => handleCall()}
             className="text-sky-500
@@ -108,6 +118,17 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
             hover:text-sky-600
             transition"
           />
+          /> */}
+          {!conversation.isGroup && (
+            <HiVideoCamera
+              size={32}
+              onClick={() => handleVideoCall()}
+              className="text-sky-500
+              cursor-pointer
+              hover:text-sky-600
+              transition"
+            />
+          )}
           <HiEllipsisHorizontal
             size={32}
             onClick={() => setDrawerOpen(true)}
